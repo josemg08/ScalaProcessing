@@ -4,7 +4,7 @@ import processing.core._
  * Created by Jose Gonzalez on 19/03/15.
  __.*/
 
-class Sample extends PApplet {
+class Test extends PApplet {
 
   var mSize = 0
 
