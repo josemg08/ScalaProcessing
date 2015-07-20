@@ -1,12 +1,12 @@
 import processing.core._
 
-/**
+/**.___
  * Created by Jose Gonzalez on 19/03/15.
- */
+ __.*/
 
-class Test extends PApplet {
+class Sample extends PApplet {
 
-  var tamano = 0;
+  var mSize = 0
 
   override def setup() = {
     size(300,300)
@@ -14,15 +14,14 @@ class Test extends PApplet {
     stroke(255,0,0)
   }
 
-  override def draw: Unit = {
-    background(0);
-    var i = 0;
+  override def draw(): Unit = {
+    background(0)
     for(i <- 5 to 25 by 10) {
-      ellipse(150, 150, tamano + i, tamano + i)
+      ellipse(150, 150, mSize + i, mSize + i)
     }
-    tamano = tamano + 1
-    if(tamano > 80){
-      tamano = 1
+    mSize = mSize + 1
+    if(mSize > 80){
+      mSize = 1
     }
   }
 
